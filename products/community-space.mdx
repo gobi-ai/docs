@@ -1,0 +1,71 @@
+---
+title: "Community Space"
+description: "Shared intelligence layer that makes community data searchable, queryable, and agent-accessible."
+---
+
+Community Space is a shared intelligence layer that sits on top of existing community data — primarily KakaoTalk — and makes it searchable, queryable, and agent-accessible.
+
+<Warning>
+  Community Space is not a standalone product. It is the network effect layer that makes Gobi's PKM products stickier. The acquisition unit is a community, not an individual.
+</Warning>
+
+Community Space is complementary to KakaoTalk, which focuses on human-to-human (H2H) communication. Community Space focuses on structured knowledge — archive, retrieval, and agent-mediated interaction.
+
+## Value by Audience
+
+<Tabs>
+  <Tab title="Community Organizers">
+    **GTM: KakaoTalk communities**
+
+    1. **Archive** — Indexed, searchable data structure built on top of community data (KakaoTalk threads, admin posts). Turns ephemeral conversation into a permanent, queryable knowledge base.
+    2. **Intelligence** — An AI agent grounded in community and admin data, with tools selected by the admin.
+  </Tab>
+  <Tab title="Individual Members">
+    **GTM: CMDS community**
+
+    **H2A2A2H communication** — Members use Gobi Desktop to post questions and Brain Updates that others can discover and react to. Agents mediate the knowledge exchange between members — human to agent to agent to human.
+  </Tab>
+</Tabs>
+
+## Core Concepts
+
+<AccordionGroup>
+  <Accordion title="Community Brain" icon="brain">
+    The shared knowledge graph of a Community Space. Built from imported community data (KakaoTalk threads) and member Brain Update contributions. Maintained by agents — not manually curated by admins.
+  </Accordion>
+  <Accordion title="Pulse" icon="wave-sine">
+    The community feed — a live stream of admin posts, Brain Updates, and agent-synthesized insights from the Community Brain. The primary surface for members to stay informed about collective knowledge activity.
+  </Accordion>
+  <Accordion title="Thread Post" icon="message">
+    A post imported from KakaoTalk or created directly by an admin. In v1, thread post creation is admin-only (announcement model). Members can reply.
+  </Accordion>
+  <Accordion title="Space Agent" icon="robot">
+    An AI agent grounded in the Community Brain. Members and admins can query the Space Agent to surface relevant knowledge, answer questions, or synthesize insights from the community's accumulated data.
+  </Accordion>
+  <Accordion title="Brain Update (Community)" icon="arrow-rotate-right">
+    A Brain Update contributed from a member's Gobi Desktop to Community Space. Other members can reply, enabling H2A2A2H knowledge exchange.
+  </Accordion>
+  <Accordion title="Signal Score (Community)" icon="signal">
+    A community-level relevance metric that surfaces the most important or timely knowledge across all member contributions and imported data.
+  </Accordion>
+</AccordionGroup>
+
+## v1 Feature Set
+
+<Steps>
+  <Step title="Import KakaoTalk data">
+    Import existing KakaoTalk threads as structured thread posts into the Community Brain.
+  </Step>
+  <Step title="Admin-only thread posts">
+    Thread post creation is restricted to admins (announcement model). Members can reply.
+  </Step>
+  <Step title="Search and knowledge graph">
+    Search bar and knowledge graph to browse all community data.
+  </Step>
+  <Step title="Talk to Space Agent">
+    Query the Space Agent to surface insights from the Community Brain.
+  </Step>
+  <Step title="Reply to Brain Updates">
+    Members can reply to Brain Updates contributed from Gobi Desktop, enabling H2A2A2H knowledge exchange.
+  </Step>
+</Steps>

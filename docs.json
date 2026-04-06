@@ -1,0 +1,68 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Gobi",
+  "colors": {
+    "primary": "#C4622D",
+    "light": "#D4845A",
+    "dark": "#A34E22"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Docs",
+        "groups": [
+          {
+            "group": "Introduction",
+            "pages": ["index"]
+          },
+          {
+            "group": "Products",
+            "pages": [
+              "products/desktop",
+              "products/community-space",
+              "products/cli",
+              "products/mobile"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
+              "reference/glossary",
+              "reference/ecosystem"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Website",
+          "href": "https://gobihq.com",
+          "icon": "house"
+        },
+        {
+          "anchor": "Support",
+          "href": "mailto:support@joingobi.com",
+          "icon": "envelope"
+        }
+      ]
+    }
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
+  "navbar": {
+    "links": [{ "label": "Support", "href": "mailto:support@joingobi.com" }],
+    "primary": { "type": "button", "label": "Get early access", "href": "https://gobihq.com" }
+  },
+  "footer": {
+    "socials": {
+      "x": "https://x.com/gobiai",
+      "github": "https://github.com/gobi-ai"
+    }
+  }
+}

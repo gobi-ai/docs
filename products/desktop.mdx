@@ -1,0 +1,50 @@
+---
+title: "Gobi Desktop"
+description: "Local-first AI workspace and personal knowledge graph."
+---
+
+Gobi Desktop is a local-first AI workspace — a personal knowledge graph with an embedded AI agent that captures, processes, organizes, and surfaces knowledge proactively. It is the primary interface for Personal Context Management (PCM).
+
+<Info>
+  **Who it's for:** Individual knowledge workers, researchers, and power users who want an AI agent that works on their behalf — not just answers questions.
+</Info>
+
+## The PCM Paradigm
+
+Gobi Desktop is built on a fundamental shift in how knowledge tools work.
+
+<CardGroup cols={2}>
+  <Card title="Personal Knowledge Management (PKM)" icon="book">
+    The legacy paradigm. The user organizes notes manually. Knowledge lives in static nodes and files. Tools like Obsidian are powerful libraries — but they require a librarian.
+  </Card>
+  <Card title="Personal Context Management (PCM)" icon="brain">
+    The Gobi paradigm. The agent maintains context dynamically. Knowledge is event-driven and relevance-ranked. Gobi is not a library. It is a judgment layer.
+  </Card>
+</CardGroup>
+
+## Core Concepts
+
+<AccordionGroup>
+  <Accordion title="Brain" icon="brain">
+    The user's personal knowledge graph. A living, agent-maintained representation of everything the user knows, has captured, and worked on. Unlike static notes, the Brain evolves continuously as the agent processes new inputs.
+  </Accordion>
+  <Accordion title="Vault" icon="lock">
+    The local storage layer where all captured data lives. Private by default — never leaves the user's device unless explicitly shared. The source of truth for the Brain.
+  </Accordion>
+  <Accordion title="Capture" icon="circle-dot">
+    The act of ingesting new information into the Brain. Can happen manually (user-initiated) or ambiently (via Gobi Sense or background monitoring). Capture types: Audio, Vision, Motion, Notes.
+  </Accordion>
+  <Accordion title="Brain Update" icon="arrow-rotate-right">
+    An agent-generated summary or synthesis of recent captures and Brain changes. Surfaces what the agent has learned or processed — keeping the user informed without requiring manual review.
+  </Accordion>
+  <Accordion title="Reflex" icon="bolt">
+    An automated background task run by the agent on the user's behalf. Configured rules or triggers — tagging, summarizing, connecting, surfacing — without user intervention. Created via "Add a Reflex."
+  </Accordion>
+  <Accordion title="Signal Score" icon="signal">
+    A relevance metric assigned to Brain items, indicating how important or timely a piece of knowledge is relative to the user's current context. Used by the agent to prioritize what to surface.
+  </Accordion>
+</AccordionGroup>
+
+## Ecosystem Role
+
+Gobi Desktop is the primary brain-building environment. It feeds Community Space (shared context) and is the surface accessible to external agents and developers via Gobi CLI.

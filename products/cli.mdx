@@ -1,0 +1,34 @@
+---
+title: "Gobi CLI"
+description: "Programmatic interface to Gobi's core capabilities for agents, developers, and power users."
+---
+
+Gobi CLI is the programmatic interface to Gobi's core capabilities — designed for agents, developers, and power users who want to interact with the Gobi ecosystem through code rather than UI.
+
+<Info>
+  **Who it's for:** Developers building on top of Gobi, AI agents that need to read from or write to a user's Brain, and power users automating workflows.
+</Info>
+
+## Core Concepts
+
+<AccordionGroup>
+  <Accordion title="Tool Interface" icon="wrench">
+    The set of callable functions exposed by Gobi CLI. Mirrors what Gobi's own agents can do — capture, retrieve, update, and query the Brain programmatically.
+  </Accordion>
+  <Accordion title="Brain Access" icon="lock-open">
+    Authenticated read/write access to a user's Brain via CLI. Governed by the same permission model as the rest of the Gobi ecosystem.
+  </Accordion>
+  <Accordion title="Capture (CLI)" icon="circle-dot">
+    Programmatic ingestion of data into the Brain. Supports all standard capture types (Audio, Vision, Motion, Notes) plus structured data inputs.
+  </Accordion>
+  <Accordion title="Query" icon="magnifying-glass">
+    A natural language or structured request to retrieve relevant context from the Brain. Exposes the same relevance engine (Signal Score) used by the desktop agent.
+  </Accordion>
+  <Accordion title="Reflex (CLI)" icon="bolt">
+    Programmatic creation and management of Reflexes — background automation tasks — without using the Desktop UI.
+  </Accordion>
+</AccordionGroup>
+
+## Ecosystem Role
+
+Gobi CLI is the agent-facing surface of the ecosystem. It enables third-party agents and developer workflows to participate in the Gobi knowledge graph — extending Gobi's ambient intelligence beyond its own products.
