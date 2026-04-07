@@ -26,7 +26,7 @@
             "pages": [
               "products/desktop",
               "products/personal-space",
-	      "products/community-space",
+              "products/community-space",
               "products/cli",
               "products/mobile"
             ]
@@ -61,8 +61,8 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [{ "label": "Support", "href": "mailto:support@joingobi.com" }],
-    "primary": { "type": "button", "label": "Get early access", "href": "https://gobihq.com" }
+    "links": [{"label": "Support", "href": "mailto:support@joingobi.com"}],
+    "primary": {"type": "button", "label": "Get early access", "href": "https://gobihq.com"}
   },
   "footer": {
     "socials": {
