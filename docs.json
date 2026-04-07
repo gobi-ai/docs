@@ -7,8 +7,8 @@
     "light": "#D4845A",
     "dark": "#A34E22"
   },
-  "font": {
-    "headings": {"family": "Source Serif 4"},
+  "fonts": {
+    "heading": {"family": "Source Serif 4"},
     "body": {"family": "Inter"}
   },
   "favicon": "/favicon.svg",
