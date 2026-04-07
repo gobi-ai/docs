@@ -5,8 +5,11 @@
   "colors": {
     "primary": "#C4622D",
     "light": "#D4845A",
-    "dark": "#A34E22"
-  },
+    "dark": "#A34E22",
+"font": {
+  "headings": {"family": "Source Serif 4"},
+  "body": {"family": "Inter"}
+},
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
@@ -21,7 +24,8 @@
             "group": "Products",
             "pages": [
               "products/desktop",
-              "products/community-space",
+              "products/personal-space",
+	      "products/community-space",
               "products/cli",
               "products/mobile"
             ]
