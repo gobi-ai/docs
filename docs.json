@@ -15,12 +15,29 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Docs",
+        "tab": "Introduction",
         "groups": [
           {
-            "group": "Introduction",
-            "pages": ["index"]
+            "group": "Getting started",
+            "pages": [
+              "introduction/welcome",
+              "introduction/what-is-pcm",
+              "introduction/who-its-for",
+              "introduction/ecosystem"
+            ]
           },
+          {
+            "group": "Reference",
+            "pages": [
+              "introduction/faq",
+              "introduction/glossary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Products",
+        "groups": [
           {
             "group": "Products",
             "pages": [
@@ -30,12 +47,16 @@
               "products/cli",
               "products/mobile"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "groups": [
           {
-            "group": "Reference",
+            "group": "Changelog",
             "pages": [
-              "reference/glossary",
-              "reference/ecosystem"
+              "changelog/overview"
             ]
           }
         ]

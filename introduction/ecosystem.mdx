@@ -1,0 +1,52 @@
+---
+title: "Ecosystem Overview"
+description: "How the five Gobi products work together around a single Brain."
+---
+
+Every Gobi product either feeds the Brain, reads from it, or shares it. No product operates independently.
+
+## The Brain is the center
+
+The **Brain** is Gobi's core data structure — a living, agent-maintained knowledge graph that grows continuously as you capture, think, and work. Every product in the Gobi ecosystem connects to it.
+
+## Products
+
+<CardGroup cols={2}>
+  <Card title="Gobi Desktop" icon="desktop" href="/products/desktop">
+    The primary Brain-building environment. Local-first, private, agent-driven. Where your knowledge graph lives and grows.
+  </Card>
+  <Card title="Gobi Personal Space" icon="user" href="/products/personal-space">
+    The public output layer. Share curated knowledge from your Brain with a broader audience via Brain Posts and your Public Brain Graph.
+  </Card>
+  <Card title="Gobi Community Space" icon="people-group" href="/products/community-space">
+    The collective intelligence layer. A closed community Brain built from member contributions and imported community data.
+  </Card>
+  <Card title="Gobi CLI" icon="terminal" href="/products/cli">
+    The agent-facing surface. Programmatic read/write access to your Brain for developers and AI agents.
+  </Card>
+  <Card title="Gobi Mobile" icon="mobile" href="/products/mobile">
+    The ambient capture layer. Feeds the Brain throughout your day — paired with Gobi Sense for hands-free capture.
+  </Card>
+</CardGroup>
+
+## How they connect
+
+| Product | Role | Feeds | Reads from |
+|---|---|---|---|
+| Gobi Desktop | Brain-building workspace | Brain / Vault | Brain / Vault |
+| Gobi Personal Space | Public knowledge sharing | — | Brain (selected) |
+| Gobi Community Space | Collective intelligence | Community Brain | Member Brains |
+| Gobi CLI | Programmatic brain access | Brain / Vault | Brain |
+| Gobi Mobile | Ambient capture layer | Brain / Vault | Brain (digest) |
+
+## Key principles
+
+**Agents do the work.** Users interact at the surface. The agent handles organization, connection, and surfacing in the background — continuously, without requiring manual maintenance.
+
+**Privacy by default.** Your Vault never leaves your device unless you explicitly share it. What flows into Personal Space or Community Space is always user-controlled.
+
+**Community is the network effect.** Community Space is not a product people pay for in isolation — it is the reason to stay. The acquisition unit is a community, not an individual.
+
+<Info>
+  Most AI answers. Gobi accumulates.
+</Info>
