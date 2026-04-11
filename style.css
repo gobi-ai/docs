@@ -1,7 +1,9 @@
-html, body, [data-theme="light"] {
-  background-color: #F9F8F7 !important;
+html[class~="dark"],
+html[class~="dark"] body {
+  background-color: #383836 !important;
 }
 
-[data-theme="dark"] {
-  background-color: #383836 !important;
+html:not([class~="dark"]),
+html:not([class~="dark"]) body {
+  background-color: #F9F8F7 !important;
 }
