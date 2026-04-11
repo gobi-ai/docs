@@ -5,11 +5,11 @@
   "colors": {
     "primary": "#C4622D",
     "light": "#D4845A",
-    "dark": "#A34E22"
-  },
-  "background": {
-    "light": "#F9F8F7",
-    "dark": "#383836"
+    "dark": "#A34E22",
+    "background": {
+      "light": "#F9F8F7",
+      "dark": "#383836"
+    }
   },
   "fonts": {
     "heading": {"family": "Source Serif 4"},
