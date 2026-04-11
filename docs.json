@@ -12,8 +12,18 @@
     "dark": "#383836"
   },
   "fonts": {
-    "heading": {"family": "Source Serif 4"},
-    "body": {"family": "Inter"}
+    "heading": {
+      "family": "Tiempos Text",
+      "source": "/fonts/TiemposText-Regular.woff2",
+      "format": "woff2",
+      "weight": 400
+    },
+    "body": {
+      "family": "Graphik",
+      "source": "/fonts/Graphik-Regular.woff2",
+      "format": "woff2",
+      "weight": 400
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {

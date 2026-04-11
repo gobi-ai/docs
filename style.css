@@ -14,3 +14,59 @@ html.dark body,
 :root[class~="dark"] body {
   background-color: #202020 !important;
 }
+
+@font-face {
+  font-family: "Tiempos Text";
+  src: url("/fonts/TiemposText-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiempos Text";
+  src: url("/fonts/TiemposText-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Tiempos Text";
+  src: url("/fonts/TiemposText-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tiempos Text";
+  src: url("/fonts/TiemposText-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik-MediumItalic.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
