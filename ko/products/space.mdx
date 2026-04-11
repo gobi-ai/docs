@@ -1,0 +1,106 @@
+---
+title: "Gobi Space"
+description: "Gobi 에코시스템의 소셜 및 집단 인텔리전스 레이어."
+---
+
+Gobi Space는 당신의 Brain이 다른 사람들과 연결되는 곳입니다. Personal Space(공개)와 Community Space(비공개) 두 가지 모드가 있습니다.
+
+<CardGroup cols={2}>
+  <Card title="Personal Space" icon="user">
+    공개 Brain 프로필. Brain Posts와 Public Brain Graph를 통해 더 넓은 청중과 큐레이션된 지식을 공유하세요.
+  </Card>
+  <Card title="Community Space" icon="people-group">
+    비공개 집단 인텔리전스 레이어. 커뮤니티의 지식 — 검색 가능하고, 질의 가능하며, 에이전트가 접근 가능합니다.
+  </Card>
+</CardGroup>
+
+## Gobi Personal Space
+
+<Info>
+  **대상 사용자:** 더 넓은 청중과 자신의 지식, 사고, 전문성을 공유하고 싶은 사용자.
+</Info>
+
+### 핵심 개념
+
+<AccordionGroup>
+  <Accordion title="Brain ID" icon="fingerprint">
+    Gobi Space 내 사용자의 고유 공개 식별자. Brain ID는 사용자의 Personal Space를 고정하며 다른 사람들이 지식 기여를 발견하고 팔로우하는 방법입니다.
+  </Accordion>
+  <Accordion title="Brain Post" icon="pen-to-square">
+    사용자의 Brain에서 Personal Space로 게시된 지식. Brain Posts는 사용자가 큐레이션하고 의도적으로 공유합니다 — 에이전트가 생성하는 Brain Updates와 구별됩니다.
+  </Accordion>
+  <Accordion title="Public Brain Graph" icon="diagram-project">
+    팔로워 또는 대중에게 공개되는 사용자 지식 그래프의 읽기 전용 뷰. 개별 게시물뿐만 아니라 개념 간의 연결을 보여줍니다.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Gobi Community Space
+
+<Info>
+  **대상 사용자:** 공유 ambient 인텔리전스를 원하는 커뮤니티 오거나이저와 멤버 — 모든 멤버로부터 학습하는 그룹 Brain.
+</Info>
+
+<Warning>
+  Community Space는 독립적인 제품이 아닙니다. Gobi의 PKM 제품을 더 끈끈하게 만드는 네트워크 효과 레이어입니다. 획득 단위는 개인이 아니라 커뮤니티입니다.
+</Warning>
+
+### 대상별 가치
+
+<Tabs>
+  <Tab title="커뮤니티 오거나이저">
+    **GTM: KakaoTalk 커뮤니티**
+
+    1. **Archive** — 커뮤니티 데이터(KakaoTalk 스레드, 관리자 게시물) 위에 구축된 색인화되고 검색 가능한 데이터 구조.
+    2. **Intelligence** — 관리자가 선택한 도구와 함께 커뮤니티 및 관리자 데이터에 기반한 AI 에이전트.
+  </Tab>
+  <Tab title="개인 멤버">
+    **GTM: CMDS 커뮤니티**
+
+    **H2A2A2H 커뮤니케이션** — 멤버는 Gobi Desktop을 사용해 다른 사람들이 발견하고 반응할 수 있는 질문과 Brain Updates를 게시합니다. 에이전트가 멤버 간 지식 교환을 중재합니다.
+  </Tab>
+</Tabs>
+
+### 핵심 개념
+
+<AccordionGroup>
+  <Accordion title="Community Brain" icon="brain">
+    Community Space의 공유 지식 그래프. 가져온 커뮤니티 데이터와 멤버 Brain Update 기여로 구축됩니다. 관리자가 수동으로 큐레이션하는 것이 아니라 에이전트가 유지 관리합니다.
+  </Accordion>
+  <Accordion title="Pulse" icon="wave-sine">
+    커뮤니티 피드 — Community Brain의 관리자 게시물, Brain Updates, 에이전트가 합성한 인사이트의 실시간 스트림. 멤버가 집단 지식 활동에 대한 정보를 얻는 주요 수단입니다.
+  </Accordion>
+  <Accordion title="Thread Post" icon="message">
+    KakaoTalk에서 가져오거나 관리자가 직접 생성한 게시물. v1에서는 스레드 게시물 생성이 관리자 전용입니다. 멤버는 댓글을 달 수 있습니다.
+  </Accordion>
+  <Accordion title="Space Agent" icon="robot">
+    Community Brain에 기반한 AI 에이전트. 멤버와 관리자가 커뮤니티의 축적된 데이터에서 관련 지식을 표면화하기 위해 질의할 수 있습니다.
+  </Accordion>
+  <Accordion title="Brain Update (커뮤니티)" icon="arrow-rotate-right">
+    멤버의 Gobi Desktop에서 Community Space로 기여된 Brain Update. 다른 멤버가 댓글을 달 수 있어 H2A2A2H 지식 교환이 가능합니다.
+  </Accordion>
+  <Accordion title="Signal Score (커뮤니티)" icon="signal">
+    모든 멤버 기여와 가져온 데이터에서 가장 중요하거나 시의적절한 지식을 표면화하는 커뮤니티 수준의 관련성 지표.
+  </Accordion>
+</AccordionGroup>
+
+### v1 기능
+
+<Steps>
+  <Step title="KakaoTalk 데이터 가져오기">
+    기존 KakaoTalk 스레드를 Community Brain에 구조화된 스레드 게시물로 가져옵니다.
+  </Step>
+  <Step title="관리자 전용 스레드 게시물">
+    스레드 게시물 생성은 관리자로 제한됩니다. 멤버는 댓글을 달 수 있습니다.
+  </Step>
+  <Step title="검색 및 지식 그래프">
+    모든 커뮤니티 데이터를 탐색하기 위한 검색 바와 지식 그래프.
+  </Step>
+  <Step title="Space Agent와 대화">
+    Community Brain에서 인사이트를 표면화하기 위해 Space Agent에 질의합니다.
+  </Step>
+  <Step title="Brain Updates에 댓글 달기">
+    멤버는 Gobi Desktop에서 기여된 Brain Updates에 댓글을 달 수 있습니다.
+  </Step>
+</Steps>

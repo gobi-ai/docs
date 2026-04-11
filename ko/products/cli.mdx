@@ -1,0 +1,34 @@
+---
+title: "Gobi CLI"
+description: "에이전트, 개발자, 파워 유저를 위한 Gobi 핵심 기능의 프로그래밍 방식 인터페이스."
+---
+
+Gobi CLI는 Gobi 핵심 기능에 대한 프로그래밍 방식의 인터페이스입니다. UI가 아닌 코드를 통해 Gobi 에코시스템과 상호작용하려는 에이전트, 개발자, 파워 유저를 위해 설계되었습니다.
+
+<Info>
+  **대상 사용자:** Gobi 위에 구축하는 개발자, 사용자의 Brain을 읽거나 쓰는 AI 에이전트, 워크플로우를 자동화하는 파워 유저.
+</Info>
+
+## 핵심 개념
+
+<AccordionGroup>
+  <Accordion title="Tool Interface" icon="wrench">
+    Gobi CLI가 노출하는 호출 가능한 함수 세트. Gobi 자체 에이전트가 할 수 있는 것을 미러링합니다 — 프로그래밍 방식으로 Brain을 캡처, 검색, 업데이트, 질의합니다.
+  </Accordion>
+  <Accordion title="Brain Access" icon="lock-open">
+    CLI를 통한 사용자 Brain에 대한 인증된 읽기/쓰기 접근. Gobi 에코시스템의 나머지 부분과 동일한 권한 모델을 따릅니다.
+  </Accordion>
+  <Accordion title="Capture (CLI)" icon="circle-dot">
+    Brain에 데이터를 프로그래밍 방식으로 입력. 모든 표준 캡처 유형(Audio, Vision, Motion, Notes)과 구조화된 데이터 입력을 지원합니다.
+  </Accordion>
+  <Accordion title="Query" icon="magnifying-glass">
+    Brain에서 관련 컨텍스트를 검색하기 위한 자연어 또는 구조화된 요청. 데스크톱 에이전트가 사용하는 것과 동일한 관련성 엔진(Signal Score)을 노출합니다.
+  </Accordion>
+  <Accordion title="Reflex (CLI)" icon="bolt">
+    Desktop UI를 사용하지 않고 Reflexes(백그라운드 자동화 작업)를 프로그래밍 방식으로 생성하고 관리합니다.
+  </Accordion>
+</AccordionGroup>
+
+## 에코시스템 역할
+
+Gobi CLI는 에코시스템의 에이전트 대면 표면입니다. 서드파티 에이전트와 개발자 워크플로우가 Gobi 지식 그래프에 참여할 수 있게 하여 Gobi의 ambient 인텔리전스를 자체 제품 너머로 확장합니다.

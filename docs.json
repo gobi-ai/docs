@@ -9,14 +9,14 @@
   },
   "background": {
     "light": "#F9F8F7",
-    "dark": "#383836"
+    "dark": "#202020"
   },
   "fonts": {
     "heading": {
       "family": "Tiempos Text",
-      "source": "/fonts/TiemposText-Regular.woff2",
+      "source": "/fonts/TiemposText-Medium.woff2",
       "format": "woff2",
-      "weight": 400
+      "weight": 500
     },
     "body": {
       "family": "Graphik",
@@ -27,56 +27,118 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Help Center",
-        "groups": [
+        "language": "en",
+        "tabs": [
           {
-            "group": "Home",
-            "pages": ["index"]
-          },
-          {
-            "group": "Products",
-            "pages": [
-              "products/desktop",
-              "products/space",
-              "products/cli",
-              "products/mobile"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Home",
+                "pages": ["index"]
+              },
+              {
+                "group": "Products",
+                "pages": [
+                  "products/desktop",
+                  "products/space",
+                  "products/cli",
+                  "products/mobile"
+                ]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "introduction/faq",
+                  "introduction/glossary"
+                ]
+              }
             ]
           },
           {
-            "group": "Reference",
-            "pages": [
-              "introduction/faq",
-              "introduction/glossary"
+            "tab": "API & CLI",
+            "groups": [
+              {
+                "group": "Coming soon",
+                "pages": ["api/overview"]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "groups": [
+              {
+                "group": "Changelog",
+                "pages": ["changelog/overview"]
+              }
+            ]
+          },
+          {
+            "tab": "Policies & Documents",
+            "groups": [
+              {
+                "group": "Legal",
+                "pages": ["policies/overview"]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API & CLI",
-        "groups": [
+        "language": "ko",
+        "tabs": [
           {
-            "group": "Coming soon",
-            "pages": ["api/overview"]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "groups": [
+            "tab": "도움말 센터",
+            "groups": [
+              {
+                "group": "홈",
+                "pages": ["ko/index"]
+              },
+              {
+                "group": "제품",
+                "pages": [
+                  "ko/products/desktop",
+                  "ko/products/space",
+                  "ko/products/cli",
+                  "ko/products/mobile"
+                ]
+              },
+              {
+                "group": "참고 자료",
+                "pages": [
+                  "ko/introduction/faq",
+                  "ko/introduction/glossary"
+                ]
+              }
+            ]
+          },
           {
-            "group": "Changelog",
-            "pages": ["changelog/overview"]
-          }
-        ]
-      },
-      {
-        "tab": "Policies & Documents",
-        "groups": [
+            "tab": "API & CLI",
+            "groups": [
+              {
+                "group": "곧 출시",
+                "pages": ["ko/api/overview"]
+              }
+            ]
+          },
           {
-            "group": "Legal",
-            "pages": ["policies/overview"]
+            "tab": "변경 로그",
+            "groups": [
+              {
+                "group": "변경 로그",
+                "pages": ["ko/changelog/overview"]
+              }
+            ]
+          },
+          {
+            "tab": "정책 및 문서",
+            "groups": [
+              {
+                "group": "법적 문서",
+                "pages": ["ko/policies/overview"]
+              }
+            ]
           }
         ]
       }
