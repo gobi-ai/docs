@@ -3,7 +3,7 @@ html, body {
   background-color: #F9F8F7 !important;
 }
 
-/* Dark mode - try all possible selectors */
+/* Dark mode */
 .dark html,
 .dark body,
 html.dark,
@@ -73,5 +73,5 @@ html.dark body,
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Tiempos Text" !important;
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
