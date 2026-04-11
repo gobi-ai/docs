@@ -1,7 +1,16 @@
-html:not(.dark) body {
+/* Light mode */
+html, body {
   background-color: #F9F8F7 !important;
 }
 
-html.dark body {
+/* Dark mode - try all possible selectors */
+.dark html,
+.dark body,
+html.dark,
+html.dark body,
+[data-color-mode="dark"],
+[data-color-mode="dark"] body,
+:root[class~="dark"],
+:root[class~="dark"] body {
   background-color: #202020 !important;
 }
