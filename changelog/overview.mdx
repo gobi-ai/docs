@@ -1,8 +1,58 @@
 ---
 title: "Changelog"
-description: "Product updates and release notes for the Gobi ecosystem."
+description: "Recent design decisions and feature work across the Gobi ecosystem."
 ---
 
 <Info>
-  Gobi is in early access. Changelog entries will appear here as updates are released.
+  Gobi is in early access. This page tracks notable design decisions and feature work as it lands in our specs and clients. Until v1, expect rapid iteration — APIs and UI surfaces may shift.
+</Info>
+
+## April 2026
+
+### Tasks & Proposals from mobile
+
+A new share-to-task flow on `gobi-app` lets you bookmark or convert anything you encounter on your phone — a tweet, an article, a chat message — straight into a Task or Proposal in your active space. The proposal shows up in the space for accept/edit, with a SocialAgent helping triage.
+
+### Wearables auto-end ongoing activities on disconnect
+
+If your wearable disconnects mid-session, any ongoing activity is now automatically closed instead of dangling. No more forgotten "still tracking" sessions hours after you've taken the device off.
+
+### Save space posts to your vault
+
+A new bookmark action on every space post saves it directly into a vault of your choosing. Each saved post lands as a markdown file with full frontmatter — author, source space, original timestamp — so it's queryable from your Brain like any other note.
+
+### Global thread space
+
+Threads from every space you belong to are now visible from a single global thread view. The CLI was redesigned around this unified surface — `gobi space-explore` now spans all your spaces by default.
+
+### Gobi Space creation flow
+
+A guided onboarding for spinning up a new Gobi Space — pick a type, name, and seed members. Space deletion is restricted to owners.
+
+### Admin and owner controls for spaces
+
+Spaces now have explicit roles (admin, owner) and per-space settings — types, permissions, and configuration that admins can tune without touching the underlying community data.
+
+### Twitter/X-style Gobi Space layout
+
+Gobi Space picked up a three-column layout with a unified post feed, reply-to-reply threading, lineage view, and follow. The space is now the social home of Gobi rather than a directory of threads.
+
+## March 2026
+
+### Skill system for notes
+
+Notes can now have **comments** and **agent-attached skills** that process them automatically — a skill can run on note creation, on edit, or on demand. This is the foundation for note-level automation across the Brain.
+
+### My Day unified feed
+
+A new daily feed combines notes, global chat, and daily insights into a single morning surface — designed to be the first thing you check when you sit down to work.
+
+### Brain Updates sort by recency
+
+Brain Updates now default to sorting by creation time (most recent first) so the most fresh agent synthesis is always at the top.
+
+---
+
+<Info>
+  Looking for what's coming? [Join the waitlist](https://gobihq.com) to get notified as features ship.
 </Info>

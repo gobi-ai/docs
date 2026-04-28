@@ -1,6 +1,6 @@
 ---
 title: "Ecosystem Map"
-description: "How the five Gobi products relate to each other and to the Brain."
+description: "How the Gobi products relate to each other and to the Brain."
 ---
 
 Every Gobi product either feeds the Brain, reads from it, or shares it. No product operates independently.
@@ -10,10 +10,15 @@ Every Gobi product either feeds the Brain, reads from it, or shares it. No produ
 | Product | Role | Feeds | Reads from |
 |---|---|---|---|
 | Gobi Desktop | Brain-building, PCM workspace | Brain / Vault | Brain / Vault |
+| Gobi Web | Browser surface for Personal Space, Community Space, Home, and conversational agents | — | Brain (read-only) |
 | Gobi Personal Space | Public knowledge sharing | — | Brain (selected) |
 | Gobi Community Space | Shared intelligence layer | Community Brain | Member Brains |
 | Gobi CLI | Programmatic brain access | Brain / Vault | Brain |
 | Gobi Mobile | Ambient capture layer | Brain / Vault | Brain (digest) |
+
+<Info>
+  Looking for the technical view? See [Architecture](/developers/architecture) for the service-level diagram including server-side projects (`gobi-backend`, `gobi-webdrive`, `gobi-cloud`).
+</Info>
 
 ## Key Principles
 

@@ -39,10 +39,26 @@
                 "pages": ["index"]
               },
               {
+                "group": "Introduction",
+                "pages": [
+                  "introduction/welcome",
+                  "introduction/what-is-pcm",
+                  "introduction/who-its-for",
+                  "introduction/ecosystem"
+                ]
+              },
+              {
                 "group": "Products",
                 "pages": [
                   "products/desktop",
-                  "products/space",
+                  {
+                    "group": "Gobi Space",
+                    "pages": [
+                      "products/space",
+                      "products/personal-space",
+                      "products/community-space"
+                    ]
+                  },
                   "products/cli",
                   "products/mobile"
                 ]
@@ -57,11 +73,26 @@
             ]
           },
           {
-            "tab": "API & CLI",
+            "tab": "Developers",
             "groups": [
               {
-                "group": "Coming soon",
+                "group": "Architecture",
+                "pages": [
+                  "developers/architecture",
+                  "developers/sync",
+                  "developers/privacy-and-data-flow"
+                ]
+              },
+              {
+                "group": "API & CLI",
                 "pages": ["api/overview"]
+              },
+              {
+                "group": "Reference",
+                "pages": [
+                  "reference/ecosystem",
+                  "reference/glossary"
+                ]
               }
             ]
           },
