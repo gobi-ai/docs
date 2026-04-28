@@ -1,8 +1,81 @@
 ---
 title: "API & CLI"
-description: "Programmatic access to Gobi — coming soon."
+description: "Programmatic access to Gobi for agents, developers, and power users."
 ---
 
+`gobi-cli` is the canonical programmatic interface to Gobi. It exposes the same capabilities the desktop and web clients use — auth, vault sync, brain reads/writes, threads, brain updates, search, and media generation — through a Node.js command-line tool.
+
 <Info>
-  The Gobi API and CLI developer documentation is coming soon. [Join the waitlist](https://gobihq.com) to get early access.
+  Gobi is in early access. The command surface and HTTP API are stabilizing — expect changes through v1. [Join the waitlist](https://gobihq.com) to get notified as the API is published.
 </Info>
+
+## Install
+
+<Tabs>
+  <Tab title="npm">
+    ```bash
+    npm install -g @gobi-ai/cli
+    ```
+  </Tab>
+  <Tab title="Homebrew">
+    ```bash
+    brew install gobi-ai/tap/gobi
+    ```
+  </Tab>
+</Tabs>
+
+After install, verify with:
+
+```bash
+gobi --version
+```
+
+## Authenticate
+
+Authentication uses the **device-code flow** — no browser dependency on the host running the CLI, so headless agents and CI runners work out of the box.
+
+```bash
+gobi login
+```
+
+The CLI prints a URL and a short code; visit the URL on any device, enter the code, and the CLI completes the handshake. Credentials are persisted to `~/.gobi/credentials.json`.
+
+To sign out:
+
+```bash
+gobi logout
+```
+
+## Configuration
+
+| Variable | Default | Purpose |
+|----------|---------|---------|
+| `GOBI_BASE_URL` | `https://backend.joingobi.com` | Override the backend endpoint (point at staging, self-hosted, etc.) |
+| `GOBI_WEBDRIVE_BASE_URL` | `https://webdrive.joingobi.com` | Override the file-sync endpoint |
+
+Project-scoped settings live in `.gobi/settings.yaml` next to a checkout — useful for pinning a vault, space, or other context to a directory.
+
+## Top-level commands
+
+These are the major command groups in the current CLI. Run `gobi <command> --help` for details on each.
+
+| Command | What it does |
+|---------|--------------|
+| `gobi login` / `gobi logout` | Device-code authentication |
+| `gobi warp` | Switch (warp) between Gobi Spaces |
+| `gobi space-explore` | Browse threads and learnings shared in the active space |
+| `gobi space-share` | Summarize a session and post a brain update to the active space |
+| `gobi sync` | Bidirectional vault sync against `gobi-webdrive` |
+
+A full command reference is forthcoming. In the meantime, `gobi --help` enumerates everything available in your installed version.
+
+## Where to learn more
+
+<CardGroup cols={2}>
+  <Card title="Architecture" icon="diagram-project" href="/developers/architecture">
+    How the Gobi services fit together — clients, backend, webdrive, cloud.
+  </Card>
+  <Card title="How sync works" icon="arrows-rotate" href="/developers/sync">
+    The cursor-based delta protocol your CLI uses to talk to webdrive.
+  </Card>
+</CardGroup>
